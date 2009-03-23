@@ -226,7 +226,7 @@ int he;
       /* ISO2022 */
       if ((D_EA && InStr(D_EA, "\033(B")) || (D_AS && InStr(D_AS, "\033(0")))
 	D_CG0 = 1;
-      if (InStr(D_termname, "xterm") || InStr(D_termname, "rxvt"))
+      if (InStr(D_termname, "xterm") || InStr(D_termname, "rxvt") || InStr(D_termname, "putty"))
 	D_CXT = 1;
       /* "be" seems to be standard for xterms... */
       if (D_CXT)
